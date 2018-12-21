@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id = "new">
+       a: <input type = "number" name = "one" id = "one" autofocus/><br>
+       b: <input type="number" name = "two" id = "two"/><br/><br/>
+                   <input type="button" value = "Add" id = "three" onclick="addition()"/>
+                   <input type="button" Value = "Subtract" id = "four" onclick="subtraction()"/>
+                   <input type="button" value = "Multiply" id = "three" onclick="multiply()"/>
+                   <input type="button" value = "Divide" id = "three" onclick="division()"/><br/><br/>
+           Result: <input type="text" id="answer"/>
+    </form>
+
+    <script>
+        function addition(){
+            let one = document.getElementById("one").value;
+            let two = document.getElementById("two").value;
+            var add = parseInt(one) + parseInt(two);
+            document.getElementById("answer").value = add;
+        }
+        function subtraction(){
+            let one = document.getElementById("one").value;
+            let two = document.getElementById("two").value;
+            var subtract = one - two;
+            document.getElementById("answer").value = subtract;
+        }
+        function multiply(){
+            let one = document.getElementById("one").value;
+            let two = document.getElementById("two").value;
+            var mul = one * two;
+            document.getElementById("answer").value = mul;
+        }
+        function division(){
+            let one = document.getElementById("one").value;
+            let two = document.getElementById("two").value;
+            var div = one / two;
+            document.getElementById("answer").value = div;
+        }
+
+    </script>
+</body>
+</html>

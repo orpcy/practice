@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sales(){
+            var reg = parseInt(prompt("How many bags of Regular coffee do you want?", 0));
+            var regCoffee = 9 * reg;
+            var dec = parseInt(prompt("How many bags of Decaffeinated coffee do you want?", 0));
+            var decafCoffee = 8 * dec;
+            var moch = parseInt(prompt("How many bags of Mocha coffee do you want?", 0));
+            var mochCoffee = 11 * moch;
+            
+            amount = regCoffee + decafCoffee + mochCoffee;
+
+            if(amount > 100){
+                amount = amount - 15;
+                document.write("You purchased " + reg + " bags of regular, totaling " + regCoffee + " dollars<br/>");
+                document.write("You purchased " + dec + " bags of decaf, totaling " + decafCoffee + " dollars<br/>");
+                document.write("You purchased " + moch + " bags of mocha, totaling " + mochCoffee + " dollars<br/>");
+                document.write("Your total purchase cost is "+ amount + " dollars($15 discount)<br/>");
+            }else{
+                document.write("You purchased " + reg + " bags of regular, totaling " + regCoffee + " dollars<br/>");
+                document.write("You purchased " + dec + " bags of decaf, totaling " + decafCoffee + " dollars<br/>");
+                document.write("You purchased " + moch + " bags of mocha, totaling " + mochCoffee + " dollars<br/>");
+                document.write("Your total purchase cost is "+ amount + " dollars<br/>");
+            }
+
+        }
+
+        function membership(){
+            var ask = prompt("Do you want to become a member of Save the Aardvark Foundation and save 20% off your purchase? Type 'Yes' or 'No'");
+            if(ask == "yes" || ask == "Yes"){
+                total = 50 + amount;
+                totalPayment = total - (0.2*total);
+                document.write("Your total amount plus membership fee is " + totalPayment + " dollars");
+            }else{
+                return false;
+            }
+        }
+
+        sales();
+        setTimeout(membership, 2000);
+    </script>
+</body>
+</html>
