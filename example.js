@@ -1,17 +1,17 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
+// const fetch = require('node-fetch');
+// const fs = require('fs');
 
-function multiplyThrough(initial){
-    let final = [];
-    initial.forEach(numbs => {
-        final = final.concat(numbs*2);
-    })
-    return final;
-}
+// function multiplyThrough(initial){
+//     let final = [];
+//     initial.forEach(numbs => {
+//         final = final.concat(numbs*2);
+//     })
+//     return final;
+// }
 
-console.log('Concatenating the numbers into final array guves us: ', multiplyThrough([2,4,6,8]));
+// console.log('Concatenating the numbers into final array guves us: ', multiplyThrough([2,4,6,8]));
 
-/*//function that prints out prime numbers between zero and maxNumber
+//function that prints out prime numbers between zero and maxNumber
 function determinePrime(maxNumber){
     let takePrime = [];
     for(a=0; a<maxNumber; a++){
@@ -29,7 +29,7 @@ function determinePrime(maxNumber){
     return takePrime;  
 }
 
-console.log(determinePrime(88));*/
+console.log(determinePrime(13));
 
 
 //create a function that takes in a number, if the number is divisible by 3, return 'fizz', if its divisible by 5, return 'buzz', if its divisibe by both 3 and 5, return fizzbuzz. pass in the number through the terminal.

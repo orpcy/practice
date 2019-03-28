@@ -42,7 +42,7 @@ const func = () => {
 
 console.log('Multiplying all the numbers together gives us ', forLoop([1,2,8,3,4,2]));
 
-//multiplying through arrays using foreach and assugnung them to a new array
+//multiplying through arrays using foreach and assigning them to a new array
 function timesUsingForEach(initial){
     const final = [];
     initial.forEach(a =>{
@@ -77,7 +77,7 @@ function determinePrime(prime){
     return true;
 }
 
-console.log(determinePrime(9));
+console.log(determinePrime(13));
 
 //nested loops
 /*
